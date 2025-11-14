@@ -66,85 +66,81 @@ This setup is designed as a real-world enterprise lab environment suitable for S
                        └─────────────────────┘
 
 
-.Active Directory Domain Services (AD DS)
+Active Directory Domain Services (AD DS)
+ 
+ ✔ Installed Roles
+ 
+ * Active Directory Domain Services
+ * DNS Server
+ * Group Policy Management
+ 
+ ✔ Domain Created
+ 
+ Domain Name: BRIGHTIWARA.com
+ Forest Functional Level: 2022
+ 
+ 
+ ✔ Tasks Completed
+ Created OU structure:
+ 
+ BrightIwaraUsers
+ BrightIwaraComputers
+ BrightIwaraAdmins
+ Joined Windows 10 client to domain
+ Created & managed domain users
+ 
+DNS Configuration
 
-✔ Installed Roles
-
-* Active Directory Domain Services
-* DNS Server
-* Group Policy Management
-
-✔ Domain Created
-
-Domain Name: BRIGHTIWARA.com
-Forest Functional Level: 2022
-
-
-✔ Tasks Completed
-Created OU structure:
-
-BrightIwaraUsers
-BrightIwaraComputers
-BrightIwaraAdmins
-Joined Windows 10 client to domain
-Created & managed domain users
-
-.DNS Configuration
-
-✔ Forward Lookup Zone
-
-
-Zone: BRIGHTIWARA.com (Primary DNS Zone)
-
-
-✔ Reverse Lookup Zone
-
-Created for network subnet.
+ ✔ Forward Lookup Zone
+ 
+ Zone: BRIGHTIWARA.com (Primary DNS Zone)
+ 
+ ✔ Reverse Lookup Zone
+ 
+ Created for network subnet.
 
 ✔ Records Created
-
-* A Records for Server & Client
-* SRV records auto-created by AD
-* PTR records for reverse lookup
+ 
+ A Records for Server & Client
+ SRV records auto-created by AD
+ PTR records for reverse lookup
 
 DHCP Server Configuration
+ ✔ Scope
+ Scope Name: BrightScope
+ Range: 10.59.1.51 – 10.59.1.200
+ Gateway: 10.59.1.1
+ DNS: 10.59.1.50 (DC01)
+ Lease Duration: 8 days
+ 
+ ✔ Reservations
+ Created for domain-joined machines.
 
-✔ Scope
-Scope Name: BrightScope
-Range: 10.59.1.51 – 10.59.1.200
-Gateway: 10.59.1.1
-DNS: 10.59.1.50 (DC01)
-Lease Duration: 8 days
-
-✔ Reservations
-Created for domain-joined machines.
-
-Group Policy Management
-
-✔ Policies Configured
-
-* Background wallpaper
-* Software deployment
-* Restrict Control Panel
-* Drive Mapping (Z:\SharedData)
-* Folder Redirection (Documents)
-* Security Hardening Policies
-* WinRM enablement
-* RDP enable policy
-
+ Group Policy Management
+ 
+ ✔ Policies Configured
+ 
+ * Background wallpaper
+ * Software deployment
+ * Restrict Control Panel
+ * Drive Mapping (Z:\SharedData)
+ * Folder Redirection (Documents)
+ * Security Hardening Policies
+ * WinRM enablement
+ * RDP enable policy
 
 File & Storage Services
 
-✔ Shared Folders
-
-* SharedData
-* UserData (Redirected Folders)
-
-✔ Permissions
-
-* SMB Sharing
-* NTFS permissions
-* Principle of Least Privilege
+ ✔ Shared Folders
+ 
+ * SharedData
+ * UserData (Redirected Folders)
+ 
+ ✔ Permissions
+ 
+ * SMB Sharing
+ * NTFS permissions
+ * Principle of Least Privilege
 
 Folder Redirection & Roaming Profiles
 
@@ -153,12 +149,11 @@ Folder Redirection & Roaming Profiles
 
 \\DC01\UserData\USERNAME\Documents
 
-
-✔ Result
-
-* Documents folder now follows users between computers
-* Data stored centrally on server
-* Backed up automatically from server side
+ ✔ Result
+ 
+ * Documents folder now follows users between computers
+ * Data stored centrally on server
+ * Backed up automatically from server side
 
 Remote Access & Management
 
