@@ -46,14 +46,14 @@ This setup is designed as a real-world enterprise lab environment suitable for S
                                │
                 ┌──────────────────────────────────┐
                 │   Windows Server 2022 (Replica)  │
-                │   - Hyper-V Replica Target       │
+                │   VirtualBox Replica Target      │
                 │   IP: 10.59.1.51                 │
                 └──────────────────────────────────┘
                                │
                                │
                 ┌──────────────────────────────────┐
                 │  Windows 10 Client               │
-                │  - Domain Joined (BRIGHT.local)  │
+                │  - Domain Joined BRIGHTIWARA.com │
                 │  - Folder Redirection            │
                 │  - GPO Applied                   │
                 └──────────────────────────────────┘
