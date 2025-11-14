@@ -196,7 +196,7 @@ Manage Client from DC01
 * Backup stored on secondary virtual disk
 
 
-# 10. Hyper-V Replica (Server to Server)
+# 10. VirtualBox Replica (Server to Server)
 ✔ Replica Setup
 
 
