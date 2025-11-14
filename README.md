@@ -30,7 +30,7 @@ This setup is designed as a real-world enterprise lab environment suitable for S
 
                  ┌────────────────────────────────────┐
                  │           Office Network           │
-                 │  Router/DHCP: 10.59.1.1            │
+                 │     Router/DHCP: 10.59.1.1         │
                  └────────────────────────────────────┘
                                │
                                │
@@ -66,7 +66,7 @@ This setup is designed as a real-world enterprise lab environment suitable for S
                        └─────────────────────┘
 
 
-1. Active Directory Domain Services (AD DS)
+Active Directory Domain Services (AD DS)
 
 ✔ Installed Roles
 
@@ -89,7 +89,7 @@ BrightIwaraAdmins
 Joined Windows 10 client to domain
 Created & managed domain users
 
-2. DNS Configuration
+DNS Configuration
 
 ✔ Forward Lookup Zone
 
@@ -107,9 +107,7 @@ Created for network subnet.
 * SRV records auto-created by AD
 * PTR records for reverse lookup
 
----
-
-# 3. DHCP Server Configuration
+DHCP Server Configuration
 
 ✔ Scope
 Scope Name: BrightScope
@@ -121,8 +119,7 @@ Lease Duration: 8 days
 ✔ Reservations
 Created for domain-joined machines.
 
-
-4. Group Policy Management
+Group Policy Management
 
 ✔ Policies Configured
 
@@ -136,7 +133,7 @@ Created for domain-joined machines.
 * RDP enable policy
 
 
-# 5. File & Storage Services
+File & Storage Services
 
 ✔ Shared Folders
 
@@ -149,8 +146,7 @@ Created for domain-joined machines.
 * NTFS permissions
 * Principle of Least Privilege
 
-
-6. Folder Redirection & Roaming Profiles
+Folder Redirection & Roaming Profiles
 
  ✔ Redirection Path
 
@@ -164,8 +160,7 @@ Created for domain-joined machines.
 * Data stored centrally on server
 * Backed up automatically from server side
 
-
-7. Remote Access & Management
+Remote Access & Management
 
 ✔ Tools Enabled
 
@@ -179,7 +174,7 @@ Manage DC01 from Client
 Manage Client from DC01
 
 
-# 8. WDS + PXE Boot Deployment
+WDS + PXE Boot Deployment
 ✔ Configured Items
 
 * Windows Deployment Services installed
@@ -187,8 +182,7 @@ Manage Client from DC01
 * PXE Boot enabled in VirtualBox
 * Windows 10 deployed automatically using PXE
 
-
-9. Backup & Restore (Windows Server Backup)
+Backup & Restore (Windows Server Backup)
 ✔ Completed
 
 * Full Server Backup
@@ -196,7 +190,7 @@ Manage Client from DC01
 * Backup stored on secondary virtual disk
 
 
-# 10. VirtualBox Replica (Server to Server)
+VirtualBox Replica (Server to Server)
 ✔ Replica Setup
 
 
@@ -210,7 +204,7 @@ Replication Frequency: 5 minutes
 Real-time VM replication for disaster recovery.
 
 
-11. Azure AD Connect (Hybrid Identity)
+Azure AD Connect (Hybrid Identity)
 
 ✔ Configuration Summary
 
@@ -222,7 +216,7 @@ Real-time VM replication for disaster recovery.
  Sync Scheduler running every 30 minutes
 
 
-12. Microsoft Entra (Azure AD)
+Microsoft Entra (Azure AD)
  Configured in Tenant
 
  Users & Groups
@@ -233,7 +227,7 @@ Real-time VM replication for disaster recovery.
 
 
 
-13. Monitoring & Performance
+Monitoring & Performance
 
  Tools Used
 
@@ -243,7 +237,7 @@ Real-time VM replication for disaster recovery.
  Resource Monitor
 
 
-14. Hardening & Security Baseline**
+Hardening & Security Baseline**
  Policies Applied
 
  Disable SMBv1
@@ -254,7 +248,7 @@ Real-time VM replication for disaster recovery.
  Logging & Audit policies
 
 
-*15. Tools Used
+Tools Used
 
 Virtualization
 
@@ -273,7 +267,7 @@ Azure Services
  Identity Protection
 
 
-16. Skills Demonstrated
+Skills Demonstrated
 
  🖥 System Administration
 
@@ -301,7 +295,7 @@ Cloud / Hybrid
 * Failover replica
 * Network monitoring
 
-17. Conclusion
+Conclusion
 
 This project demonstrates full ability to deploy, manage, secure, and integrate an enterprise Windows Server environment with Azure services.
 It shows the skills required for:
