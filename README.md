@@ -66,8 +66,8 @@ This setup is designed as a real-world enterprise lab environment suitable for S
                        └─────────────────────┘
 
 
-**Active Directory Domain Services (AD DS)
-**
+.Active Directory Domain Services (AD DS)
+
 ✔ Installed Roles
 
 * Active Directory Domain Services
@@ -89,7 +89,7 @@ BrightIwaraAdmins
 Joined Windows 10 client to domain
 Created & managed domain users
 
-DNS Configuration
+.DNS Configuration
 
 ✔ Forward Lookup Zone
 
